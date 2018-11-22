@@ -5,7 +5,8 @@ class EmailParser
   
   def parse 
     e = @emails.split(', ')
-    e.join
+    e.join(' ')
+    e.split(' ')
     e.uniq!
     e
   end
